@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  promo: one
+  min_quantity: 1
+  min_value: 1
+
+two:
+  promo: two
+  min_quantity: 1
+  min_value: 1
