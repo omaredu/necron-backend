@@ -18,11 +18,12 @@ User.destroy_all
 
 # Seed Products
 products = [
-  { sku: 'PROD001', description: 'High-quality leather wallet', name: 'Leather Wallet', factory_price: 2500 },
-  { sku: 'PROD002', description: 'Stainless steel water bottle', name: 'Water Bottle', factory_price: 1200 },
-  { sku: 'PROD003', description: 'Bluetooth wireless earbuds', name: 'Wireless Earbuds', factory_price: 7500 },
-  { sku: 'PROD004', description: 'Portable solar charger', name: 'Solar Charger', factory_price: 5000 },
-  { sku: 'PROD005', description: 'Ergonomic office chair', name: 'Office Chair', factory_price: 18000 }
+  { sku: 'PROD001', description: 'Coca-cola 2.50 L rt pet 8', name: 'Coca-cola 2.50 L', factory_price: 19713 },
+  { sku: 'PROD002', description: 'Sprite 355 ml rt vid 24', name: 'Sprite 355 ml', factory_price: 20313 },
+  { sku: 'PROD003', description: 'Ciel agua purif 20.0 L rt pet 1', name: 'Ciel agua purif 20.0 L', factory_price: 6840 },
+  { sku: 'PROD004', description: 'Fresca toronja 355 ml nr lat 24', name: 'Fresca toronja 355 ml', factory_price: 34796 },
+  { sku: 'PROD005', description: 'Manzana lift 355 ml nr lat 24', name: 'Manzana lift 355 ml', factory_price: 34796 },
+  { sku: 'PROD006', description: 'Monster 600 ml oz lat 6', name: 'Monster 600 ml oz lat 6', factory_price: 54796 }
 ]
 
 products.each do |product|
@@ -35,11 +36,11 @@ end
 
 # Seed Promos
 promos = [
-  { product_id: Product.find_by(sku: 'PROD001')&.id, description: '20% off on leather wallets', promo_type: :percentage },
-  { product_id: Product.find_by(sku: 'PROD002')&.id, description: 'Buy one get one free on water bottles', promo_type: :bonus },
-  { product_id: Product.find_by(sku: 'PROD003')&.id, description: '15$ discount', promo_type: :money },
-  { product_id: Product.find_by(sku: 'PROD004')&.id, description: '10% off on solar chargers', promo_type: :percentage },
-  { product_id: Product.find_by(sku: 'PROD005')&.id, description: '15% off on office chairs', promo_type: :percentage }
+  { product_id: Product.find_by(sku: 'PROD001')&.id, description: '20% de descuento', promo_type: :percentage },
+  { product_id: Product.find_by(sku: 'PROD002')&.id, description: 'Compra una, llévate una gratis', promo_type: :bonus },
+  { product_id: Product.find_by(sku: 'PROD003')&.id, description: '15$ de bonificación', promo_type: :money },
+  { product_id: Product.find_by(sku: 'PROD004')&.id, description: '10% de decuento', promo_type: :percentage },
+  { product_id: Product.find_by(sku: 'PROD005')&.id, description: '15% de descuento', promo_type: :percentage }
 ]
 
 promos.each do |promo|

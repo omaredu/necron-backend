@@ -1,6 +1,6 @@
 class Product < ApplicationRecord
   has_many :promos, dependent: :destroy
-  has_many :promo_rewards, dependent: :destroy, foreign_key: 'reward_id'
+  has_many :promo_rewards, dependent: :nullify, foreign_key: 'reward_id'
 
   validates :name, presence: true
   validates :sku, presence: true, uniqueness: true

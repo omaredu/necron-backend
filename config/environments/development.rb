@@ -70,7 +70,7 @@ Rails.application.configure do
   config.action_controller.raise_on_missing_callback_actions = true
 
   # Hosts for which the application is considered local
-  config.hosts << "944d-189-206-36-188.ngrok-free.app"
+  config.hosts << "5e6b-189-153-200-233.ngrok-free.app"
 
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 end
